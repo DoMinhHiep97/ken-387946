@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<fieldset>
+    <legend>Tra cứu số ngày trong tháng</legend>
+    <h2>Select</h2>
+    <select id="month">
+        <option value="1">Tháng 1</option>
+        <option value="2">Tháng 2</option>
+        <option value="3">Tháng 3</option>
+        <option value="4">Tháng 4</option>
+        <option value="5">Tháng 5</option>
+        <option value="6">Tháng 6</option>
+        <option value="7">Tháng 7</option>
+        <option value="8">Tháng 8</option>
+        <option value="9">Tháng 9</option>
+        <option value="10">Tháng 10</option>
+        <option value="11">Tháng 11</option>
+        <option value="12">Tháng 12</option>
+    </select>
+    <button type="button" value="" onclick="action()" id="act">BOOM</button>
+</fieldset>
+<script>
+    function action() {
+        let option=document.getElementById("month").value;
+        switch (option) {
+            case "1":
+            case "3":
+            case  "5":
+            case "7":
+            case "8":
+            case "10":
+            case "12": {
+                alert("Số ngày trong tháng là: 31! OhhhhhhYEAHHHHH^^");
+                break;
+            }
+            case "4":
+            case "6":
+            case "9":
+            case "11":{
+                alert("Số ngày trong tháng là: 30! OhhhhhhYEAHHHHH^^");
+            }
+            case "2":{
+                alert("Số ngày trong tháng là 28 hoặc 29,hihi. Tùy Năm^^");
+            }
+
+        }
+    }
+</script>
+</body>
+</html>
